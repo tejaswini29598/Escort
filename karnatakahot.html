@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+         
+        <a class='expand' href='/placekarnataka'>PLACES</a>
+  
+        <div class="subnav">
+         <a  href="karnatakares.HTML" class="subnavbtn">RESTAURANTS</a>
+        </div>
+    
+         <a  href="karnatakahot.HTML" class="expand">HOTELS</a>
+       
+         
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>HOTELS AT KARNATAKA</h1>
+    <h2>**CLICK ON EACH TAB TO VISIT</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Evolve+Back,+Hampi/@15.2745733,75.3585833,9z/data=!4m13!1m2!2m1!1sEVOLVE+BACK+HAMPI!3m9!1s0x3bb77e0aac461def:0x4d3fb548f3abefdf!5m2!4m1!1i2!8m2!3d15.2745733!4d76.4791888!15sChFFVk9MVkUgQkFDSyBIQU1QSSIDiAEBWhMiEWV2b2x2ZSBiYWNrIGhhbXBpkgEMcmVzb3J0X2hvdGVsmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVF5TkdSUWRWTm5FQUXgAQA!16s%2Fg%2F11cmt0c2mh"><button><img class="card-img" src="photos\EVOLVE BACK HAMPI HOTEL.jpg" alt="HAMPI" /></button></a>
+          <div class="card-content">
+            <h1 class="card-header">EVOLVE BACK HOTEL</h1>
+            <p class="card-text">
+              Kamalapura – P.K. Halli Road, Kamalapura, Hosapete, Karnataka 583221
+              PH NO :<strong>063669 20434</strong>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/The+Leela+Palace+Bengaluru+-+Garden+City's+Only+Modern+Palace+Hotel/@12.9602459,77.6461627,17z/data=!3m2!4b1!5s0x3bae1406706717a3:0x8e39042e683f3825!4m8!3m7!1s0x3bae14067cca9bdd:0x111bbe37cc24e71a!5m2!4m1!1i2!8m2!3d12.9602407!4d77.6483514"><button><img class="card-img"src="photos\THE LEELA PALACE HOTEL BENGALURU.jpg"alt="BENGLURU"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:25px;"class="card-header">THE LEELA PALACE</h1>
+            <p class="card-text">
+              23, HAL Old Airport Rd, HAL 2nd Stage, Kodihalli, Bengaluru, Karnataka 560008
+              PH NO :<strong>080 2521 1234</strong>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Lalitha+Mahal+Palace+Hotel/@12.2983008,76.6904218,17z/data=!3m1!4b1!4m8!3m7!1s0x3baf7005079c2ff5:0xc796fc64f4676317!5m2!4m1!1i2!8m2!3d12.2982956!4d76.6926105"><button><img class="card-img" src="photos\Lalitha_Mahal_Palace_,_Mysore_-_HOTEL.jpg" alt="MYSURU" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:25px;" class="card-header">LALITHA MAHAL PALACE</h1>
+            <p class="card-text">
+            Lalitha Mahal Palace Road, Lalithmahal Nagar, Siddhartha Layout, Mysuru, Karnataka 570028
+            PH NO :<strong>0821 247 0444</strong>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Taj+Madikeri+Resort+%26+Spa,+Coorg/@12.4459148,75.6828252,17z/data=!3m1!4b1!4m8!3m7!1s0x3ba5007546c508b5:0x45002b121c9e2ce0!5m2!4m1!1i2!8m2!3d12.4459096!4d75.6850139"><button><img class="card-img" src="photos\TAJ MADIKERI HOTEL.jpeg"alt="MADIKERI"/></button></a>
+          <div class="card-content">
+            <h1 class="card-header">TAJ MADIKERI</h1>
+            <p class="card-text">
+             1st Monnangeri Galibeedu, Post, Madikeri, Karnataka 571201
+             PH NO : <STRONG>082722 65900</STRONG>
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

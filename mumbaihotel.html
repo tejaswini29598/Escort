@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+        <a class='expand' href='/placemumbai'>PLACES</a>
+  
+        <div class="subnav">
+         <a class='subnavbtn' href="mumbaires.html">RESTAURANTS</a>
+        </div>
+    
+         <a  href="mumbaihotel.html" class="expand">HOTELS</a>
+         
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>HOTELS AT MUMBAI </h1>
+    <h2>**CLICK ON EACH TAB TO VISIT**</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/search/Lemon+Tree+Hotel,+mumbai/@19.0909752,72.8409388,13z/data=!3m1!4b1"><button><img class="card-img" src="photos/LEMON TREE.jpeg" alt="Rome" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:25px;" class="card-header">LEMON TREE</h1>
+            <p class="card-text">
+             
+The price of the citrus fruit soared in India's summer months of April to June, thanks to the combination of a poor harvest — due to an unusually rainy winter and hot summer — and the global rise in gas prices, which bumped up transportation costs. Lemons are a mainstay of Indian cuisine
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/search/taj+hotel+mumbai/@19.0909686,72.8409386,13z/data=!3m1!4b1"><button><img class="card-img" src="photos/Taj Mahal Hotel Mumbai Has A Minor Fire Accident.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:22px;"class="card-header">TAJ HOTEL</h1>
+            <p class="card-text">
+              When it opened in 1903, the Taj Mahal Hotel was the first in India to have electricity, American fans, German elevators, Turkish baths and English butlers. Later, it also had the city's first licensed bar, India's first all-day restaurant, and India's first discotheque, Blow Up.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Courtyard+by+Marriott+Mumbai+International+Airport/@19.1140701,72.8554245,15z/data=!3m1!4b1!4m8!3m7!1s0x3be7c83a0b5aaceb:0x76df30fcaacbaa20!5m2!4m1!1i2!8m2!3d19.1140703!4d72.8641579"><button><img class="card-img" src="photos/COURTYARD.jpeg" alt="Maldives" /></button></a>
+          <div class="card-content">
+            <h1  style="font-size:23px;" class="card-header">COURTYARD</h1>
+            <p class="card-text">
+              Style of hotel and ambience
+Perfectly situated in Andheri East, Courtyard Mumbai International Airport offers 4-star comfort and an ideal location. Travelers love our hotel's seamless access to the city's premier local attractions and business hub, including events at the Bandra Kurla Complex.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+         <a href="https://www.google.com/maps/place/Hotel+Mina+International/@19.137321,72.8379132,15z/data=!3m1!4b1!4m8!3m7!1s0x3be7b62dc6069807:0x95061dbfc7b409a6!5m2!4m1!1i2!8m2!3d19.1373212!4d72.8466466"><button> <img class="card-img" src="photos/HOTEL MINA.png"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1 style="font-size:23px;" class="card-header">HOTEL MINA</h1>
+            <p class="card-text">
+              Book at Hotel Mina International, Mumbai. No Reservation Costs. Great Rates. Great Availability. No Booking Fees. Best Price Guarantee. Special Offers. Low Rates. Amenities: Free Wifi, Parking, Non Smoking Rooms, 24 Hour Front Desk.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

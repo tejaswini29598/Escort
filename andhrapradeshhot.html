@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+        <a class='expand' href='/placeandhrapradesh'>PLACES</a>
+  
+        <div class="subnav">
+         <a class='subnavbtn' href='/andhrapradeshres'>RESTAURANTS</a>
+        </div>
+    
+         <a class='expand' href='/andhrapradeshhot'>HOTELS</a>
+         
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>HOTELS AT ANDHRAPRADESH </h1>
+    <h2>**CLICK ON EACH TAB TO VISIT**</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Fortune+Select+Grand+Ridge/@13.6133055,79.4387902,17z/data=!3m1!4b1!4m8!3m7!1s0x3a4d4b96b5df1eb1:0xf798b22548dcfcba!5m2!4m1!1i2!8m2!3d13.6133656!4d79.4409376"><button><img class="card-img" src="photos\FORTUNE SELECT GRAND RIDGE HOTEL THIRUPATHI.jpeg" alt="Rome" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:25px;" class="card-header">FORTUNE SELECT GRAND RIDGE</h1>
+            <p class="card-text">
+              URBAN HUT, 8-84, SHILPARAMAM, Tiruchanoor Rd, Tirupati, Andhra Pradesh 517503
+              PH NO :<STRONG>0877 222 1818</STRONG>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/The+SBS+inn+(guest+House)/@17.8213259,82.4708976,17z/data=!3m1!4b1!4m8!3m7!1s0x3a39f76bd991024b:0xf824dcdd215938f2!5m2!4m1!1i2!8m2!3d17.8213208!4d82.4730863"><button><img class="card-img" src="photos\SBS INN HOTEL IN LAMBASINGI.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:22px;"class="card-header">SBS INN HOTEL</h1>
+            <p class="card-text">
+              Diguva pakalu, Lambasingi, Andhra Pradesh 531118
+              PH NO :<strong> 099899 99545</strong>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Casa+Holiday+Resorts/@18.3138283,82.8909102,17z/data=!3m1!4b1!4m8!3m7!1s0x3a3a4b732aa078d1:0xdf22c66ac84ad281!5m2!4m1!1i2!8m2!3d18.3138232!4d82.8930989"><button><img class="card-img" src="photos\CASA HOLIDAT HOTEL IN ARAKU.jpeg"alt="Maldives" /></button></a>
+          <div class="card-content">
+            <h1  style="font-size:23px;" class="card-header">CASA HOLIDAY HOTEL</h1>
+            <p class="card-text">
+              Araku - Visakhapatnam Rd, Araku Valley, Andhra Pradesh 531149
+              PH NO :<strong>089778 88999</strong>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+         <a href="https://www.google.com/maps/place/Dolphin+Hotel/@17.7138988,83.2960094,17.49z/data=!4m8!3m7!1s0x3a3943192407d4ad:0x7e752ce840d4c784!5m2!4m1!1i2!8m2!3d17.7137204!4d83.2974457"><button> <img class="card-img" src="photos\DOLPHIN HOTEL IN VIZAG.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1 style="font-size:23px;" class="card-header">DOLPHIN HOTEL</h1>
+            <p class="card-text">
+             75 Feet Road, Dolphin Hotel Jct, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020
+             PH NO :<strong> 0891 662 2444</strong> 
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

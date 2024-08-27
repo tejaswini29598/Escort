@@ -1,0 +1,18 @@
+
+.formPopup {
+    display: none;
+    position:fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
+    background-color: #fff;
+    width: 35%;
+    margin: 100px auto;
+    text-align: center;
+    padding: 0 0 0 0;
+    border-radius: 50px;
+    box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+  }
+  

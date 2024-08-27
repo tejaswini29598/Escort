@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+           <a class='expand' href='/placeandhrapradesh'>PLACES</a>
+  
+          <div class="subnav">
+           <a href="placeandhrapradeshres.html" class="subnavbtn">RESTAURANTS</a>
+          </div>
+      
+          <a class='expand' href='/andhrapradeshhot'>HOTELS</a>
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>RESTAURANTS AT ANDHRA PRADESH</h1>
+    <h2>**CLICK ON EACH TAB TO VISIT**</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Taj+Tirupati/@13.6076442,79.4353232,17z/data=!3m1!4b1!4m8!3m7!1s0x3a4d4b901a7581c3:0xc3215ff477c1a29!5m2!4m1!1i2!8m2!3d13.607639!4d79.4375119"><button><img class="card-img" src="photos\taj thirupathi.jpeg" alt="Rome" /></button></a>
+          <div class="card-content">
+            <h1 class="card-header">Taj Tirupathi</h1>
+            <p class="card-text">
+              <strong>Taj Tirupati</strong>, 260 1B, Tanapalli Cross Rd, Tirupati, Andhra Pradesh 517501
+              ph no :<strong>0877 225 3600</strong>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Silver+Oak's+Resorts+%26Restaurant/@17.8247898,82.4938307,17z/data=!3m1!4b1!4m8!3m7!1s0x3a39f55d10aa677d:0xdbcd1efc02edd94c!5m2!4m1!1i2!8m2!3d17.8247847!4d82.4960194"><button><img class="card-img" src="photos\sliver oka's resort and restaurants.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:30px;"class="card-header">Silver Oka's Resort & Restaurant</h1>
+            <p class="card-text">
+               RFFW+WC, Pedabarada, Andhra Pradesh 531116
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/ROYAL+DARBAR+RESTAURANT/@18.3207234,82.8786751,17z/data=!3m1!4b1!4m5!3m4!1s0x3a3a4bb7ab776d31:0xbcb814b994b5eeaf!8m2!3d18.3207183!4d82.8808638"><button><img class="card-img" src="photos\royal darbar restaurant.jpeg"/></button></a>
+          <div class="card-content">
+            <h1 style="font-size:30px;" class="card-header">Royal Darbar</h1>
+            <p class="card-text">
+            MAIN ROAD, beside MPTO OFFICE, Araku Valley, Andhra Pradesh 531151
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Flying+Spaghetti+Monster/@18.3207234,82.8786751,17z/data=!4m5!3m4!1s0x3a3943400019c37f:0xa1e850db58c45f6d!8m2!3d17.721089!4d83.3148882"><button><img class="card-img" src="photos\restaurant in vizag.jpg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1 style="font-size:25px;" class="card-header">Flying Spaghetti </h1>
+            <p class="card-text">
+              G2 Sai Dakshita Complex G2 Waltair Main Road, Club main Gate, Waltair Uplands, Opp, Visakhapatnam, Andhra Pradesh 530003
+              ph no :<strong>089125 66652</strong>
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

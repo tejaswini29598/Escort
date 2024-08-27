@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+        <a class='expand' href='/placemumbai'>PLACES</a>
+  
+        <div class="subnav">
+         <a class='subnavbtn' href="mumbaires.html">RESTAURANTS</a>
+        </div>
+    
+         <a  href="mumbaihotel.html" class="expand">HOTELS</a>
+         
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>RESTAURANTS AT MUMBAI </h1>
+    <h2>**CLICK ON EACH TAB TO VISIT**</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Masque/@18.9898256,72.8168844,15z/data=!3m1!4b1!4m5!3m4!1s0x3be7ce8af24717d9:0xae1b5b0526d83ff6!8m2!3d18.9898258!4d72.8256177"><button><img class="card-img" src="photos/[_en]Masque Restaurant[_] - Secret Retreats.jpeg" alt="Rome" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:25px;" class="card-header">MASQUE</h1>
+            <p class="card-text">
+              Nestled within one of Mumbai's old textile mills, Masque is an ingredient-driven restaurant helmed by entrepreneur Aditi Dugar.
+
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Yauatcha+Mumbai/@19.0609122,72.8542245,15z/data=!3m1!4b1!4m5!3m4!1s0x3be7c8e7f9f0767f:0x7416ff01ce7ad4b5!8m2!3d19.0609124!4d72.8629578"><button><img class="card-img" src="photos/Yauatcha Mumbai.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:22px;"class="card-header">YAUATCHA</h1>
+            <p class="card-text">
+              The restaurant was created in 2004 by Alan Yau, who previously created the Japanese Wagamama and Thai Busaba Eathai restaurant chains as well as the more expensive Hakkasan restaurant, also in London.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/The+Table/@18.9241758,72.8243336,15z/data=!3m2!4b1!5s0x3be7d1c1378794b7:0x732d5b7b9eced26e!4m5!3m4!1s0x3be7d1c137810ea3:0x21384737f2ec91e2!8m2!3d18.924176!4d72.8330669"><button><img class="card-img" src="photos/tableAD India.jpeg" alt="Maldives" /></button></a>
+          <div class="card-content">
+            <h1  style="font-size:23px;" class="card-header">THE TABLE</h1>
+            <p class="card-text">
+              The Table is a restaurant at Colaba, Mumbai, India, known for serving San Francisco style globally inspired cuisine. It was established by Jay Yousuf and Gauri Devidayal in early 2011
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/San:Qi/@18.9942979,72.8115815,15z/data=!3m1!4b1!4m5!3m4!1s0x3be7ce8fb09e4355:0xf63ae17c93780cbc!8m2!3d18.9942979!4d72.8203002"><button><img class="card-img" src="photos/san qi.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1 style="font-size:23px;" class="card-header">SAN-QIK</h1>
+            <p class="card-text">
+              San Qi is the best for Thai, Asian, basically any type of cuisine you want. This is our second time visiting San Qi from overseas. The dinner of San Qi is the best I have ever eaten. Their noodle dishes such as Pad Thai, Stir Fry Noodles are amazing! We also had the guava cheesecake and passionfruit lava cake which are such unique dishes. 
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

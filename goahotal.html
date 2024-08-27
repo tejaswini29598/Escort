@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+        <a class='expand' href='/placegoa'>PLACES</a>
+  
+        <div class="subnav">
+         <a class='subnavbtn' href="goares.html">RESTAURANTS</a>
+        </div>
+    
+         <a class='expand' href="goahotal.html">HOTELS</a>
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>HOTELS AT GOA </h1>
+    <h2>**CLICK ON EACH TAB TO VISIT**</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Holiday+Inn+Resort+Goa,+an+IHG+Hotel/@15.1588846,73.9392288,15z/data=!3m1!4b1!4m8!3m7!1s0x3bbe4c8f7104b1ed:0x9b4eba313c551ef4!5m2!4m1!1i2!8m2!3d15.1588848!4d73.9479622"><button><img class="card-img" src="photos/hotalgoa1.jpeg" alt="Rome" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:20px;" class="card-header">HOLIDAY INN RESORT</h1>
+            <p class="card-text">
+              
+The Holiday Inn brand provides the services that business travelers need, while also offering a comfortable atmosphere where all people can relax and enjoy amenities such as restaurants and room service, swimming pools, fitness centers and comfortable lounges.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Le+M%C3%A9ridien+Goa,+Calangute/@15.5323333,73.7562055,15z/data=!3m1!4b1!4m8!3m7!1s0x3bbfc1ef4aed6b05:0x882a051cfb7a5023!5m2!4m1!1i2!8m2!3d15.5323335!4d73.7649389"><button><img class="card-img" src="photos/hotal goa2.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:20px;"class="card-header">LE MERIDIEN</h1>
+            <p class="card-text">
+              Le Méridien Goa Calangute is one deluxe property, offering guests with all the Goan charms. Given its gorgeous beach location and modern facilities, this hotel in hot Calangute region has a laid-back and vacation look that attracts people seeking luxury accommodation options
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/SOBIT+SAROVAR+PORTICO+GOA+-+PALOLEM/@15.0103584,74.0180608,15z/data=!3m1!4b1!4m8!3m7!1s0x3bbe455251027487:0x7988d51a3bf6c93f!5m2!4m1!1i2!8m2!3d15.0103586!4d74.0267942"><button><img class="card-img" src="photos/hotal goa3.jpeg" alt="Maldives" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:20px;" class="card-header">SOBIT SAROVAR PORTICO</h1>
+            <p class="card-text">
+              The Sobit Sarovar Portico is an elegantly built holiday hotel located far from the madding crowd, in the quaint side of Palolem, South Goa.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Casa+Dos+Rebelos/@15.4997326,73.8184466,15z/data=!3m1!4b1!4m8!3m7!1s0x3bbfc114489bc921:0x277534b75912729a!5m2!4m1!1i2!8m2!3d15.4997328!4d73.82718"><button><img class="card-img" src="photos/hotal goa4.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1 style="font-size:20px;" class="card-header">CASA DOS REBELOS</h1>
+            <p class="card-text">
+              Nearby attractions include Church of Our Lady of the Immaculate Conception (0.2 km), Big Daddy Casino (0.1 km), and Church of the Immaculate Conception of the Virgin Mary (0.3 km).
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

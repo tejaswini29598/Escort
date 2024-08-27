@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        <a class='expand' href='/placegoa'>PLACES</a>
+  
+        <div class="subnav">
+         <a class='subnavbtn' href="goares.html">RESTAURANTS</a>
+        </div>
+    
+         <a class='expand' href="goahotal.html">HOTELS</a>
+         
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>RESTAURANTS AT GOA </h1>
+    <h2>**CLICK ON EACH TAB TO VISIT**</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/The+Fishermans+Wharf/@15.3480205,73.5788512,10z/data=!4m10!1m2!2m1!1sthe+fisherman's+wharf+restaurant+goa!3m6!1s0x3bbe4c8e3c183545:0x86a5d36c0de501c4!8m2!3d15.1579018!4d73.9517806!15sCiR0aGUgZmlzaGVybWFuJ3Mgd2hhcmYgcmVzdGF1cmFudCBnb2EiA4gBAVomIiR0aGUgZmlzaGVybWFuJ3Mgd2hhcmYgcmVzdGF1cmFudCBnb2GSAQ9nb2FuX3Jlc3RhdXJhbnTgAQA!16s%2Fg%2F1tlgwdkv"><button><img class="card-img" src="photos\the-fisherman-s-wharf.jpg" alt="Rome" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:25px;" class="card-header">THE FISHERMANS WHARF</h1>
+            <p class="card-text">
+              Fisherman's Wharf is best known for being the location of Pier 39, great waterfront restaurants, Ghirardelli Square, San Francisco Maritime Museum, Musée Mécanique, the Cannery Shopping Center, a Ripley's Believe it or Not museum, the Wax Museum at Fisherman's Wharf
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+            <a href="https://www.google.com/maps/search/thalassa+restaurant+goa/@15.5535268,73.6456909,11z/data=!3m1!4b1"><button><img class="card-img" src="photos/te.jpeg"alt="Grand Canyon"/></button></a>
+            <div class="card-content">
+              <h1  style="font-size:20px;"class="card-header">THALASSA</h1>
+            <p class="card-text">
+              Thalassa , Goa Overview
+              Having moved out to the backwaters along with Siolim (from its prior location of Vagator hilltop), Thalassa is famous for its signature cocktails and sunsets. Reverberating with the cultural flavour of Greece, it serves authentic Greek Mediterranean cuisine.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+            <a href="https://www.google.com/maps/search/tamarind+restaurant+goa/@15.5109818,73.6916802,11z/data=!3m1!4b1"><button><img class="card-img" src="photos/ta.jpeg" alt="Maldives" /></button></a>
+            <div class="card-content">
+              <h1 style="font-size:25px;" class="card-header">TAMARIND CAFE</h1>
+            <p class="card-text">
+              One of the best place to dine in Calangute/Candolim. The best place for coffee, good bakery, fantastic food, excellent grill and no matter what time you're here, You'll always leave with a smile.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+            <a href="https://www.google.com/maps/place/Relish+Unique+Dining+%26+Bar/@15.5525909,73.7483839,15z/data=!3m1!4b1!4m5!3m4!1s0x3bbfea05ae2baca9:0x4d38aea34599bf06!8m2!3d15.5525911!4d73.7571387"><button><img class="card-img" src="photos/rel.jpeg"alt="Grand Canyon"/></button></a>
+            <div class="card-content">
+              <h1 style="font-size:20px;" class="card-header">RELISH UNIQUE</h1>
+            <p class="card-text">
+              Our family visited this restaurant numerous times during our stay. Although they had just opened up after the pandemic, the food, atmosphere, and service was consistently excellent
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

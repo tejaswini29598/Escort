@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+     
+        <a class='expand' href='/placedelhi'>PLACES</a>
+  
+        <div class="subnav">
+         <a  href="DELHIRES.HTML" class="subnavbtn">RESTAURANTS</a>
+        </div>
+    
+         <a  href="DELHIHOTEL.HTML" class="expand">HOTELS</a>
+       
+         
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>RESTAURANTS AT DELHI</h1>
+    <h2>**CLICK ON EACH TAB TO VISIT**</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/search/zaffron+restaurant+delhi/@12.0908116,42.2891744,3z/data=!3m1!4b1"><button><img class="card-img" src="photos\delhi zaffron Res.png" alt="Rome" /></button></a>
+          <div class="card-content">
+            <h1 class="card-header">ZAFFRON</h1>
+            <p class="card-text">
+              Zaffran is one of the most iconic places in CP and is part of Hotel Delhi Heights. Visited here with family one fine afternoon
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Veda+Restaurant/@28.6349712,77.2094044,15z/data=!3m1!4b1!4m5!3m4!1s0x390ce2c8109d9791:0x2f36850840aa164d!8m2!3d28.6349715!4d77.2181378"><button><img class="card-img" src="photos/DELHI RES VEDA.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:25px;"class="card-header">VEDA</h1>
+            <p class="card-text">
+              Been here a couple of times, being a family restaurant it is not dark and crowded, the first floor seating is better.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Caffe+Tonino/@28.6349997,77.210711,15z/data=!3m1!4b1!4m5!3m4!1s0x390cfd3821785709:0x70710656438652bd!8m2!3d28.635!4d77.2194444"><button><img class="card-img" src="photos/delhi res caffe tonino.jpeg" alt="Maldives" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:25px;" class="card-header">CAFFE TONINO</h1>
+            <p class="card-text">
+              Totes adorable place for a Sunday brunch!! Loved the cute and beautiful ambiance. Great place to try out different kinds of pasta
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/The+Spice+Route/@28.6254336,77.2092707,15z/data=!3m1!4b1!4m5!3m4!1s0x390cfd3565ee2c55:0x2ec17e6c197da51b!8m2!3d28.6254339!4d77.2180041"><button><img class="card-img" src="photos/DELHI RES THE SPICE ROUTE.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1 class="card-header">THE SPICE ROUTE</h1>
+            <p class="card-text">
+              The Spice Route, New Delhi: See 866 unbiased reviews of The Spice Route, rated 4.5 of 5 on Tripadvisor and ranked #119 of 12919 restaurants in New Delhi.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

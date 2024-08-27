@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+button{
+  color: white;
+  background-color: black;
+}
+h1{
+  font-size: 10%;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+           <a class='expand' href='/placeandhrapradesh'>PLACES</a>
+  
+          <div class="subnav">
+           <a  href="andhrapradeshres.HTML" class="subnavbtn">RESTAURANTS</a>
+          </div>
+      
+           <a  href="andhrapradeshhot.HTML" class="expand">HOTELS</a>
+         
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>PLACES AT ANDHRA PRADESH</h1>
+    <a href="https://www.google.com/maps/place/Andhra+Pradesh/@15.8838846,78.5167273,7z/data=!3m1!4b1!4m5!3m4!1s0x3a3546f8ae93d47f:0x33d1bbbe95adcd83!8m2!3d15.9128998!4d79.7399875"><button>For Direction Click Here</button></a>
+    <h2>**CLICK ON EACH TAB TO VISIT**</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Tirumala,+Tirupati,+Andhra+Pradesh/@13.681681,79.3289708,14z/data=!3m1!4b1!4m5!3m4!1s0x3bb2b562cc4e1291:0x85a1996b4b87bcf6!8m2!3d13.6807357!4d79.3508975"><button><img class="card-img" src="photos\Thirumala.jpeg" alt="thirumala" /></button></a>
+          <div class="card-content">
+            <h1 class="card-header">THIRUMALA</h1>
+            <p class="card-text">
+              <strong>Tirupati</strong> is one of the most visited pilgrimage centre in India, famous for its landmark temples, mostly dedicated to the incarnations of Lord Vishnu. The destination holds several legendary tales to tell, <strong>that fascinates tourists from across the world.</strong>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Lambasingi,+Andhra+Pradesh+531116/@17.8191167,82.4884629,16z/data=!3m1!4b1!4m5!3m4!1s0x3a39f4044d3c05c7:0xe428ecd09f8338da!8m2!3d17.818596!4d82.4921961"><button><img class="card-img" src="photos\lambasingi.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:25px;"class="card-header">LAMBASINGI</h1>
+            <p class="card-text">
+              <strong>Lambasingi</strong> (or Lammasingi) is a small village in the Eastern Ghats of Chintapalli Mandal of <strong>Alluri Sitharama Raju</strong> district in the Indian state of Andhra Pradesh. With an altitude that of <strong>1000 m above sea level</strong>, the area is cooler than the surrounding plains and is covered in moist deciduous forest cover.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Araku+Valley,+Andhra+Pradesh/@18.3294544,82.8637172,15z/data=!3m1!4b1!4m5!3m4!1s0x3a3a4a4c298a218d:0x2b8de4f914b5f996!8m2!3d18.3273486!4d82.8775218"><button><img class="card-img" src="photos\arakku.jpeg" alt="araku valley" /></button></a>
+          <div class="card-co00ntent">
+            <h1 style="font-size:25px;" class="card-header">ARAKU VALLEY</h1>
+            <p class="card-text">
+              <strong>Araku</strong> Valley is a hill station in Alluri Sitharama Raju district in the Indian state of Andhra Pradesh, lying 111 km west of Visakhapatnam city. This place is often referred to as Ooty of Andhra. It is a valley in the Eastern Ghats inhabited by different tribes, mainly Araku Tribes
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Borra+Caves/@18.280698,83.0375105,17z/data=!3m1!4b1!4m5!3m4!1s0x3a3bc834502bc679:0x2f0b7af29a9a7137!8m2!3d18.2806929!4d83.0396992"><button><img class="card-img" src="photos\borracaves.jpeg"alt="Borra Caves"/></button></a>
+          <div class="card-content">
+            <h1 class="card-header">BORRA CAVES</h1>
+            <p class="card-text">
+              The caves are basically <STRONG>karstic</STRONG> limestone structures extending to a depth of <STRONG>80 m (260 ft)</STRONG>, and are considered the deepest caves in India.The Borra Caves are located on the East Coast of India, in the Ananthagiri hills of the Araku Valley of the Alluri Sitharama Raju district in Andhra Pradesh.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

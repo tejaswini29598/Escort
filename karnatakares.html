@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+     
+        <a class='expand' href='/placekarnataka'>PLACES</a>
+  
+        <div class="subnav">
+         <a  href="karnatakares.html" class="subnavbtn">RESTAURANTS</a>
+        </div>
+    
+         <a  href="karnatakahot.HTML" class="expand">HOTELS</a>
+       
+         
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>RESTAURANTS AT KARNATAKA</h1>
+    <h2>**CLICK ON EACH TAB TO VISIT**</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Mango+Tree+Restaurant+%26+Manass+Guest+House/@15.335513,76.4581794,17z/data=!3m1!4b1!4m8!3m7!1s0x3bb77fd9361a7355:0xab5943ee5324fb5!5m2!4m1!1i2!8m2!3d15.335563!4d76.4603664"><button><img class="card-img" src="photos\MANGO TREE RESTAURANT HAMPI.jpg"alt="Rome" /></button></a>
+          <div class="card-content">
+            <h1 class="card-header">MANGO TREE</h1>
+            <p class="card-text">
+             Janatha Plot, Hampi, Karnataka 583239
+             PH NO :<strong>094487 65213</strong> 
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Lotus+Pavilion,+ITC+Gardenia+-+Restaurants+In+Bengaluru/@12.9670053,77.593585,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae16762b09415b:0xefcb055d45fdada5!8m2!3d12.9670001!4d77.5957737"><button><img class="card-img" src="photos\LOTUS PAVILION RESTAURANT BENGALURE.jpg"=alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:25px;"class="card-header">LOTUS PAVILION</h1>
+            <p class="card-text">
+             Grand fine dining in an outdoor pavilion surrounded by pools and pillars at a luxury hotel.JBS Haldane Avenue, 1, Residency Rd, Ashok Nagar, Bengaluru, Karnataka 560025
+             PH NO :<strong>080 2211 9898</strong>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Oyster+Bay/@12.3340952,76.6157553,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7af555b36bad:0x50f3e7c6754efa0e!8m2!3d12.3341205!4d76.6179452"><button><img class="card-img" src="photos\oyster-bay MYSURU.jpg" alt="OSTRY-BAY" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:25px;" class="card-header">OYSTER-BAY</h1>
+            <p class="card-text">
+            Kannada Parishath Road, Vijayanagar, 2nd Stage, near Water tank, Mysuru, Karnataka 570017
+            PH NO :<strong> 099000 37368</strong>  
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/search/Coorg-Dining-PlaintainLeaf/@12.4499719,76.1256395,9z/data=!3m1!4b1"><button><img class="card-img" src="photos\Coorg-Dining-PlaintainLeaf MYSURU.jpg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1 class="card-header">COORG-DINING-PLAINTAINLEAF</h1>
+            <p class="card-text">
+             8VGV+C5C, Karadigodu Rd, Siddapura, Karnataka 571253
+            <!-- PH NO :<strong></strong> -->
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

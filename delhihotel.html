@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+         
+        <a class='expand' href='/placedelhi'>PLACES</a>
+  
+        <div class="subnav">
+         <a  href="DELHIRES.HTML" class="subnavbtn">RESTAURANTS</a>
+        </div>
+    
+         <a  href="DELHIHOTEL.HTML" class="expand">HOTELS</a>
+       
+         
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>HOTELS AT DELHI</h1>
+    <h2>**CLICK ON EACH TAB TO VISIT</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/search/the+suryya+hotel+in+new+delhi/@28.6013262,77.0409191,11z/data=!3m1!4b1"><button><img class="card-img" src="photos/delhi hotal1.jpeg" alt="Rome" /></button></a>
+          <div class="card-content">
+            <h1 class="card-header">THE SURYYA</h1>
+            <p class="card-text">
+              About The Suryaa New Delhi. The Suryaa New Delhi is a great choice for travellers looking for a 5 star hotel in Delhi. It is located in New Friends Colony.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Ambassador,+New+Delhi+-+IHCL+SeleQtions/@28.6015411,77.2202456,15z/data=!3m1!4b1!4m8!3m7!1s0x390ce2c2a963c603:0x6401b43d4b6cb40!5m2!4m1!1i2!8m2!3d28.6015414!4d77.228979"><button><img class="card-img" src="photos/delhi hotal 2.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:25px;"class="card-header">AMBASSADOR</h1>
+            <p class="card-text">
+              5 Star Hotel in Delhi near Khan Market
+
+With its British and Art Deco architectural medley, the Ambassador offers guests a chance to live a refined New Delhi life in its greenest district.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/THE+ASHOK+HOTEL,+Chanakyapuri,+New+Delhi,+Delhi+110021/@28.5974795,77.1913363,16z/data=!3m1!4b1!4m5!3m4!1s0x390ce29fedb5cc73:0xc0ee7d091b49e2cb!8m2!3d28.5972725!4d77.1956029"><button><img class="card-img" src="photos/delhi hotal 3.jpeg" alt="Maldives" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:25px;" class="card-header">THE ASHOK</h1>
+            <p class="card-text">
+              With a total inventory of 550 rooms, The Ashok has 389 well appointed premium rooms with latest in in-room comforts like choice of bed size (King, Queen & Twin), complimentary wireless internet, LED television, electronic in-room safe and a host of welcome amenities.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Hotel+Shri+Vinayak/@28.6459395,77.2089585,15z/data=!3m1!4b1!4m8!3m7!1s0x390cfd3fff6d1a1d:0xb42ab8e20eed07e!5m2!4m1!1i2!8m2!3d28.6459397!4d77.2176862"><button><img class="card-img" src="photos/delhi hotal 4.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1 class="card-header">SHRI VINAYAK</h1>
+            <p class="card-text">
+              Hotel Shri Vinayak in New Delhi - Now book Online Hotels at lowest price and also find best hotel deals and offers for the Hotel Shri Vinayak.
+
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+button{
+  color: white;
+  background-color: black;
+}
+h1{
+  font-size: 10%;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+           <a class='expand' href='/placekarnataka'>PLACES</a>
+  
+          <div class="subnav">
+           <a  href="karnatakares.HTML" class="subnavbtn">RESTAURANTS</a>
+          </div>
+      
+           <a  href="karnatakahot.HTML" class="expand">HOTELS</a>
+         
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>PLACES AT KARNATAKA</h1>
+    <a href="https://www.google.com/maps/place/Karnataka/@15.0303931,74.0762611,7z/data=!3m1!4b1!4m5!3m4!1s0x3ba35a4c37bf488f:0x41f1d28cd1757cd5!8m2!3d15.3172775!4d75.7138884"><button>For Direction Click Here</button></a>
+    <h2>**CLICK ON EACH TAB TO VISIT**</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Hampi,+Karnataka+583239/@15.3332002,76.4589573,16z/data=!3m1!4b1!4m5!3m4!1s0x3bb77fd95d4be823:0x6e52e05076df36b8!8m2!3d15.3350132!4d76.460024"><button><img class="card-img" src="photos\HAMPI 1.jpg" alt="hampi" /></button></a>
+          <div class="card-content">
+            <h1 class="card-header">HAMPI</h1>
+            <p class="card-text">
+              <strong>Hampi</strong> was the capital of the <strong>Vijayanagara Empire in the 14th century</strong>. It was a fortified city. Chronicles left by Persian and European travellers, particularly the Portuguese, say that Hampi was a prosperous, wealthy and grand city near the Tungabhadra River, with numerous temples, farms and trading markets.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9542946,77.4908523,11z/data=!3m1!4b1!4m5!3m4!1s0x3bae1670c9b44e6d:0xf8dfc3e8517e4fe0!8m2!3d12.9715987!4d77.5945627"><button><img class="card-img" src="photos\BENGALORE.jpg"alt="bengalore"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:25px;"class="card-header">BENGALURU</h1>
+            <p class="card-text">
+              An <strong>aerospace and electronics hub since the 1960s</strong>, Bangalore is widely regarded as the <strong>"Silicon Valley of India"</strong> because of its role as the nation's leading information technology (IT) exporter.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Mysuru,+Karnataka/@12.3108046,76.5656491,12z/data=!3m1!4b1!4m5!3m4!1s0x3baf70381d572ef9:0x2b89ece8c0f8396d!8m2!3d12.2958104!4d76.6393805"><button><img class="card-img" src="photos\MYSORE.jpg" alt="mysuru" /></button></a>
+          <div class="card-co00ntent">
+            <h1 style="font-size:25px;" class="card-header">MYSURU</h1>
+            <p class="card-text">
+              <STRONG>Mysore</STRONG> is situated at the foothills of <STRONG>Chamundi Hills</STRONG> about 145 km (90.1 mi) towards the southwest of Bangalore and spread across an area of 286.05 km2 (110 sq mi). Mysore City Corporation is responsible for the civic administration of the city, which is also the headquarters of Mysore district and Mysore division.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://www.google.com/maps/place/Madikeri,+Karnataka+571201/@12.4314694,75.7173603,14z/data=!3m1!4b1!4m5!3m4!1s0x3ba50075627a7fff:0xaf8a66ea4651c1a6!8m2!3d12.4244205!4d75.7381856"><button><img class="card-img" src="photos\MADIKERI.jpg"alt="MADIKERI"/></button></a>
+          <div class="card-content">
+            <h1 class="card-header">MADIKERI</h1>
+            <p class="card-text">
+             <strong> Madikeri</strong> was known as Muddu Raja Keri, which meant Mudduraja's town, was named after the prominent Haleri king Mudduraja who ruled Kodagu from 1633 to 1687. From 1834, during the British Raj, it was called Mercara. It was later renamed to Madikeri by the Government of Mysore.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

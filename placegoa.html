@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+button{
+  color: white;
+  background-color: black;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.grid {
+  display:flex;
+  max-width:1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+ </style>
+
+  </head>
+  <body>
+
+  <nav class="navbar">
+      <div id="trapezoid">
+        
+           <a class='expand' href='/placegoa'>PLACES</a>
+  
+          <div class="subnav">
+           <a class='subnavbtn' href="goares.html">RESTAURANTS</a>
+          </div>
+      
+           <a class='expand' href="goahotal.html">HOTELS</a>
+         
+  </nav>
+  <div>
+    <style>
+      .homebutton{
+         display:flex;
+         position: absolute;
+         top: 90px;
+         left:70px;
+          height: 70px;
+          width: 70px;
+        }
+    </style>
+    <a href='/'><img class="homebutton"src="photos/home-icon-iconbunny.jpg" alt=""></a>
+    </div>
+<div class="pagebox">
+  <div>
+    <h1>PLACES AT GOA </h1>
+     <a href="https://maps.app.goo.gl/osHKS3p7cNSqFM8M6"><button>For Direction Click Here</button></a>
+     <h2>**CLICK ON EACH TAB TO VISIT**</h2>
+  </div>
+  <style>
+    .pagebox h1{
+      font-size: 45px;
+      
+    }
+    .pagebox{
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      height: 150px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content:center;
+      text-align: center;
+    }
+    @media only screen and (max-width:465px){
+  .pagebox h1{
+    font-size: 30px;
+  }
+}
+  </style>
+</div>
+
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://maps.app.goo.gl/CTyesfixzy9heFvz8"><button><img class="card-img" src="photos/Dudhsagar Falls Photo.jpeg" alt="Rome" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:25px;" class="card-header">Dudhsagar Falls</h1>
+            <p class="card-text">
+              The route for rail to reach the falls from Goa is Collem – Mollem (6 km) – Dudhsagar Falls. The another route is from Carambolim (Karmali Railway Station – Konkan Railways). The route is Carambolim – Old Goa – Ponda – Tiska- Mollem (total 50 km) – Dudhsagar Falls.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://maps.app.goo.gl/ykf77cTWmxbAvtJB9"><button><img class="card-img" src="photos/pol.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1  style="font-size:25px;"class="card-header">PALOLEM BEACH</h1>
+            <p class="card-text">
+              Palolem Beach is one of the cleanest and calmest beaches, and it has relatively shallow waters. Located in South Goa, Palolem Beach is one of the best beaches in Goa for families.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://maps.app.goo.gl/rQ6qQSRXPGrb9see7"><button><img class="card-img" src="photos/Anjuna Beach.jpeg" alt="Maldives" /></button></a>
+          <div class="card-content">
+            <h1 style="font-size:25px;" class="card-header">ANJUNA BEACH</h1>
+            <p class="card-text">
+              Now, when it comes to North Goa, beaches like Anjuna, Baga, Calangute and Vagator steal the show with their lively atmosphere and the thrills they offer in terms of water sports, street food and heart-thumping parties.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+       
+      <div class="grid-item">
+        <div class="card">
+          <a href="https://maps.app.goo.gl/CVLLrWvZVvJNP4xq7"><button><img class="card-img" src="photos/Basilica of Bom Jesus in Goa_ the most famous church in India.jpeg"alt="Grand Canyon"/></button></a>
+          <div class="card-content">
+            <h1 style="font-size:20px;" class="card-header">BASILICA OF BOM JUSUS</h1>
+            <p class="card-text">
+              Situated in Old Goa, the Basilica of Bom Jesus was built in 1605 AD. The Basilica is home to the tomb and mortal remains of St Francis Xavier and is a monument typical of the classic forms of architecture introduced by the Society of Jesus, otherwise known as the Jesuits.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
